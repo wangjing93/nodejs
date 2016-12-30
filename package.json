@@ -1,0 +1,24 @@
+{
+  "name": "zzjddg",
+  "version": "1.0.0",
+  "description": "test module",
+  "main": "helloworld.js",
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "make test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zzjddg/test.git"
+  },
+  "author": "zzjddg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zzjddg/test/issues"
+  },
+  "homepage": "https://github.com/zzjddg/test#readme"
+}
