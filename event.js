@@ -1,11 +1,15 @@
 /**
  * Created by WangJing on 2016/12/30.
  */
-var EventEmitter = require('events').EventEmitter;
-var event = new EventEmitter();
-event.on('some_event', function () {
-    console.log('some_event 事件触发');
+var events = require('events');
+
+var emitter = new events.EventEmitter();
+
+emitter.on('some_event', function (arg1, arg2) {
+    console.log('listener1', arg1, arg2);
 });
-setTimeout(function () {
-    event.emit('some_event');
-},1000);
+emitter.on('some_event', function (arg1, arg2) {
+    console.log('listener2', arg1, arg2);
+});
+
+emitter.emit('some_event', 'arg1 参数', 'arg2参数');
